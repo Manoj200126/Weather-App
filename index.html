@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App - Find weather of any city</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-
 
     <div class="app-container">
         <div class="search-box">
             <input type="text" name="city" id="city-input" placeholder="Enter City Name" spellcheck="false">
             <button id="search"><img src="images/search.png" alt=""></button>
         </div>
+        <div id="recent" class="recent-box"></div>
         <div class="error">
             <p>Invalid City Name</p>
         </div>
@@ -54,4 +51,5 @@
 
     </div>
 </body>
+
 </html>
